@@ -11,6 +11,7 @@ body {
 
 .container {
     text-align: center;
+    display: block;
 }
 
 .header_text {
@@ -19,7 +20,44 @@ body {
 }
 
 .gif_container img {
-    width: 100%; 
-    max-width: 500px; 
-    height: auto; 
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+
+.pictures img {
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    width: 400px;
+    height: auto;
+}
+
+.pictures img:nth-child(1) {
+    transform: rotate(-18deg) scale(1.4);
+}
+
+.pictures img:nth-child(2) {
+    transform: rotate(6deg);
+}
+
+.pictures img:nth-child(3) {
+    transform: rotate(-10deg);
+}
+
+.pictures img:nth-child(4) {
+    transform: rotate(12deg);
+}
+
+.layout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
